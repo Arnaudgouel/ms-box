@@ -23,7 +23,7 @@ export const Layout = () => {
           <div className="collapse navbar-collapse row" id="navbarNav">
             <ul className="navbar-nav col-10">
               <li className="nav-item">
-                <a id="basic-button" aria-controls={open ? 'basic-menu' : undefined} aria-haspopup="true" aria-expanded={open ? 'true' : undefined} className="nav-link text-black" aria-current="page" href="#" onClick={handleClick}>Nos offres</a>
+                <div id="basic-button" aria-controls={open ? 'basic-menu' : undefined} aria-haspopup="true" aria-expanded={open ? 'true' : undefined} className="nav-link text-black" aria-current="page" onClick={handleClick} style={{cursor:"pointer"}}>Nos offres</div>
                 <Menu
                   id="basic-menu"
                   anchorEl={anchorEl}
@@ -44,6 +44,9 @@ export const Layout = () => {
               </li>
               <li className="nav-item">
               <Link to={`/contact`} className="text-decoration-none text-black nav-link">Contact</Link>
+              </li>
+              <li className="nav-item">
+              <Link to={`/legals`} className="text-decoration-none text-black nav-link">Mentions Légales</Link>
               </li>
             </ul>
             <div className="col-2 text-end">
